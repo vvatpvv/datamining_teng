@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import re
 
-df = pd.read_csv("device_attributes_filtered_verif.csv")
+df = pd.read_csv("device_attributes_filtered.csv")
 
 def convert_voltage(value):
     if pd.isna(value):
@@ -287,4 +287,5 @@ neg_counts = df['Tribonegative'].value_counts().head(5)
 print(neg_counts)
 ele_counts = df['Electrode'].value_counts().head(5)
 print(ele_counts)
+
 
